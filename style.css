@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0;
+}
+
+.principal {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  grid-template-rows: repeat(5, 100px);
+  gap: 15px;
+  position: relative;
+}
+
+.celda {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.celda:hover {
+  background-color: lightgray;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contenido-derecha {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  margin-right: 5%;
+  margin-left: 10px;
+  margin-top: 5%;
+}
+.seccion1,
+seccion2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  width: 100px;
+  height: auto;
+}
+
+.seccion p {
+  margin-left: 25px;
+  margin-top: 20px;
+}
+
+.contenido-derecha > div {
+  margin-bottom: 20px;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  transform: translate(-50%);
+}
+
+button {
+  background-color: aqua;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
